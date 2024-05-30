@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
+import { increment } from './counter.action';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: `
+  <app-my-counter></app-my-counter>
+`
 })
 export class AppComponent {
-  title = 'ngRx';
+     
 }
